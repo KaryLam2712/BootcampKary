@@ -1,4 +1,4 @@
-package src.questions;
+package questions;
 
 import java.util.Scanner;
 
@@ -34,8 +34,10 @@ public class JavaQuest3 {
       case 1:
         MonthOfName = "January";
         number_Of_DaysInMonth = 31;
+        System.out.println(MonthOfName + " " + year + " has " + number_Of_DaysInMonth + " days");
         // Code here .. 
         break;
+
       case 2:
         MonthOfName = "February";
         // The February has 29 days: (Every 4 years and the year cannot divded by 100)
@@ -45,53 +47,74 @@ public class JavaQuest3 {
         // how about other months, December?
         if (year % 4 ==0 && (year % 100 !=0 || year % 400 ==0))
         {number_Of_DaysInMonth = 29;
+          System.out.println(MonthOfName + " " + year + " has " + number_Of_DaysInMonth + " days");
       } else {
         number_Of_DaysInMonth = 28;
-        }
+        System.out.println(MonthOfName + " " + year + " has " + number_Of_DaysInMonth + " days");}
         break;
+
         case 3:
         MonthOfName = "March";
         number_Of_DaysInMonth = 31;
+        System.out.println(MonthOfName + " " + year + " has " + number_Of_DaysInMonth + " days");
         break;
+
         case 4:
         MonthOfName = "April";
         number_Of_DaysInMonth = 30;
+        System.out.println(MonthOfName + " " + year + " has " + number_Of_DaysInMonth + " days");
         break;
+
         case 5:
         MonthOfName = "May";
         number_Of_DaysInMonth = 31;
+        System.out.println(MonthOfName + " " + year + " has " + number_Of_DaysInMonth + " days");
         break;
+
         case 6:
         MonthOfName = "June";
         number_Of_DaysInMonth = 30;
+        System.out.println(MonthOfName + " " + year + " has " + number_Of_DaysInMonth + " days");
         break;
+
         case 7:
         MonthOfName = "July";
         number_Of_DaysInMonth = 31;
+        System.out.println(MonthOfName + " " + year + " has " + number_Of_DaysInMonth + " days");
         break;
+
         case 8:
         MonthOfName = "August";
         number_Of_DaysInMonth = 31;
+        System.out.println(MonthOfName + " " + year + " has " + number_Of_DaysInMonth + " days");
         break;
+
         case 9:
         MonthOfName = "September";
         number_Of_DaysInMonth = 30;
+        System.out.println(MonthOfName + " " + year + " has " + number_Of_DaysInMonth + " days");
         break;
+
         case 10:
         MonthOfName = "October";
         number_Of_DaysInMonth = 31;
+        System.out.println(MonthOfName + " " + year + " has " + number_Of_DaysInMonth + " days");
         break;
+
         case 11:
         MonthOfName = "November";
         number_Of_DaysInMonth = 30;
+        System.out.println(MonthOfName + " " + year + " has " + number_Of_DaysInMonth + " days");
         break;
+
         case 12:
         MonthOfName = "Decemebr";
         number_Of_DaysInMonth = 31;
+        System.out.println(MonthOfName + " " + year + " has " + number_Of_DaysInMonth + " days");
         break;
+
         default:
         System.out.println("Invalid month number.");
-        return;
-        System.out.println(MonthOfName + " " + year + " has " + number_Of_DaysInMonth + " days");
   }
+}
 }
