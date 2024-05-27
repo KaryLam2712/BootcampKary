@@ -90,6 +90,10 @@ if ((x3.charAt(0)+x3.charAt(1)+x3.charAt(2)).equals("wel") ){
 System.out.println(x3.substring(0,3).length()); // 3
 System.out.println(x3.substring(0,3).charAt()); //e
 
+//
+String x6 = x3.substring(0,3); // "wel"
+System.out.println(x6.length()); // 3 
+
 //Or more inconvience 
 
 String x4=x3.substring(0,3);
@@ -98,6 +102,55 @@ System.out.println(l1);//3
 //charAt()
 if(x3.charAt(0) =='w' && x3.charAt(1) == 'e' && x3.charAt(2) =='l'){
     System.out.println("yes");
+}
+// isEmpty()
+//Empty String vaule -> ""
+String x7 =""; 
+System.out.println(x7.isEmpty()); // true
+String x8= "abc"; 
+System.out.println(x8.isEmpty()); // false 
+System.out.println(x7.length()==0);// true
+
+//isBlank()
+String x9= "";
+System.out.println(x9.isBlank()); // true 
+x9= "";
+System.out.println(x9.isBlank()); // true
+System.out.println(x9.isBlank()); // false
+
+//substring (0,3)
+//substring (0)
+String s10="hello";
+System.out.println(s10.substring(0)); // hello, from index 0 to the end.
+System.out.println(s10.substring(0,3));//hel, from index 0 to the index 2 (3-1)
+
+//hello ->HELLO
+System.out.println(s10.toUpperCase()); // "HELLO"
+String s11="Hello"; 
+System.out.println(s11.toLowerCase());
+
+System.out.println(s10.replace('l','x')); // hexxo
+System.out.println(s10.replace("ll", "yyyy")); //heyyyyo
+
+System.out.println(s10.contains("ell")); // true 
+
+//startWith()
+System.out.println(s10.startWith("he")); // true 
+//endwith()
+System.out.println(s10.endWith("o")); // true
+
+//trim() removing the space characters at the head/tail of the strings 
+String s12= "    Hello,   bottcamp  !!!"; 
+System.out.println(s12.trim()); //  Hello,  bootcamp !!!
+
+//EX 
+String[] strings=new String[]{"hello", "abcijk", "vincent", "Hello", "    HELLO"}; 
+// how many string contains "ELL", ignore case 
+//to Uppercase(), Contains()
+System.out.println(toUppercase());
+
+
+
 }
 
 }

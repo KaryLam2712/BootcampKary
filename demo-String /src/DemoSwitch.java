@@ -43,6 +43,7 @@ public class DemoSwitch {
     System.out.print("Please input a number :");
     int month =input.nextInt(); // line of input ->int
     System.out.println("month" + month);
+ 
 
   }
 }
