@@ -74,12 +74,18 @@ public class Method {
                 }
                 }
                 }
-                if (str.)
+                
+            
             
         }
       
      public static double cicleArea(int radius){
 
+     }
+
+     // Java ->PI
+     public static double circleArea(int radius){
+        return radius * radius * MAth.PI
      }
     
 

@@ -134,8 +134,95 @@ public class DemoArray {
       }
     }
     System.out.println(result2); // obkta
+ 
+    // average 
+    int[] arr5= new int[] {4,8,3};
+    int sum=0; 
+    int count2=0;
+    for (int i=0; i< arr5.length; i++){
+      sum +=arr5[i];
+      count2++;
+    }
+ System.out.println(sum/count2);
+
+ //swapping in array 
+ int[]arr6= new int[] {6,10,-4,15};
+ //swap -4 and -6 -> [-4,10,6,15]
+ int temp= arr[2];
+ arr[2]=arr6[0];
+ arr[0]= temp;
+ System.out.println(Arrays.toString(arr6)); 
+
+ // Sorting -> [-4,6,10,15]
+
+ //Level 1 
+// arr6: [10,6,15,-4]
+//move the first element to the tail of the array 
+// result [10,6,15,-4]
+ 
+int t=-1;
+ for (int i=0; i<arr6.length -1; i++){
+ t = arr6[i];
+ arr6[i]=arr6[i+1];
+ arr6[i+1]=t; }
+ System.out.println(Arrays.toString(arr6));
+
+ // level 2 
+ // move the max to the tail 
+ // [10,6,15,-4]now 
+ // [10,6,-4,15]
 
 
+ for (int i=0; i<arr6.length -1; i++){
+    if (arr6[i]> arr6[i+1]){
+      //swap
+      t=arr6[i];
+      arr6[i] = arr6[i+1];
+      arr6[i+1]=t;
+    }
+  }
+  System.out.println(Arrays.toString(arr6));
+  
+ // level 3 
+ //Sorting -> [-4,6,10,15]
+ //for loop nested loop 
+ for (int i =0; i<arr6.length -1; i++){ // round 
+  for (int j=0; j<arr6.length - j -1; j++){ // moving
+   if (arr6[j]>arr6[j+1]);
+      t=arr6[j];
+      arr6[j]=arr6[j+1];
+      arr6[j+1]=t;
+  }
+ }
+ 
+  
+
+ // Swap char vaule 
+ //convert char[]
+ //for loop + charAt()
+
+ String s9 ="hello"; // swap e and o ->holle
+ //Alternative 
+//arr7 = s9.toCharArray();
+
+char [] arr7 = new char[s9.length()];
+ char t2=' ';
+ for (int i =0; i <s.length(); i++){
+  arr7[i]=s.charAt(i);
+ }
+ t2 =arr7[i];
+ arr7[1]=arr7[5];
+ arr7[5]=t2;
+ s9 = String.valueOf(arr7);// assign a new String vaule to variable s
+System.out.println(s9); //holle
+
+
+ }
+
+    
+   
+  
+ }
   }
 }
-}
+
